@@ -6,15 +6,15 @@
 
 //import
 import React from 'react';
-import ReactNative from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 
 //component
-const App = () => {
-    return (
-        <Text>Some Text</Text>
+const App = () => (
+        <Header />
     );
-};
+
 
 //render
-ReactNative.AppRegistry.registerComponent('album',
+AppRegistry.registerComponent('album',
 () => App);
