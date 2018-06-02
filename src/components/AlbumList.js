@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, ToastAndroid } from 'react-native';
+import { ScrollView, ToastAndroid } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -27,9 +27,9 @@ class AlbumList extends Component {
         ToastAndroid.show(JSON.stringify(this.state.albums[0]), ToastAndroid.SHORT);
 
         return (
-            <View>
+            <ScrollView>
                 {this.renderAlbums()}
-            </View>
+            </ScrollView>
              );
     }
 
